@@ -1,0 +1,19 @@
+classes:
+  - first
+parameters:
+  _param:
+    colour: red
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  colour:
+    doubleescaped: \red
+    escaped: ${_param:colour}
+    unescaped: red
+  dict_to_override: {}
+  empty:
+    dict: {}
+    list: []
+  list_to_override: []

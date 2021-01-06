@@ -1,0 +1,24 @@
+classes:
+  - second
+  - first
+parameters:
+  '1':
+    an_numeric_key: true
+    as_a_dict: 1
+  '2':
+    - as_a_list
+  '3': value
+  _param:
+    notfound: exist
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  three:
+    a: 1
+    b: 2
+  will:
+    warn:
+      at:
+        second: exist

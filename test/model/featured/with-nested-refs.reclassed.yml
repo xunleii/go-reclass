@@ -1,0 +1,13 @@
+classes:
+  - first
+parameters:
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  alpha:
+    one: 99
+    two: a
+  beta:
+    a: 99

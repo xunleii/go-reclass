@@ -1,0 +1,14 @@
+classes:
+  - fourth
+  - third
+  - second.second
+  - first
+parameters:
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  component:
+    config:
+      a: b

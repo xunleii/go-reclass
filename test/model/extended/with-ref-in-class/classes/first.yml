@@ -1,0 +1,9 @@
+classes:
+  - ${_class:env:override}
+
+parameters:
+  _class:
+    env:
+      override: 'second'
+  lab:
+    name: default

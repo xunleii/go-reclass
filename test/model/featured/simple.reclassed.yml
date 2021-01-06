@@ -1,0 +1,33 @@
+classes:
+  - first
+parameters:
+  _param:
+    colour: red
+    some: param
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  colours:
+    blue:
+      name: blue
+    red:
+      name: red
+  dict_to_override:
+    one: 1
+    two: 2
+  lab:
+    label: first
+    name: test
+  list_to_override:
+    - one
+    - two
+  one:
+    a: 1
+    b: 2
+  three:
+    e: 5
+  two:
+    c: 3
+    d: 4

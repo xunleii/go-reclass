@@ -2,7 +2,7 @@ classes:
   - first
   - second
   - third
-parameter:
+parameters:
   '1':
     an_numeric_key: true
     as_a_dict: 1

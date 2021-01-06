@@ -1,0 +1,8 @@
+classes:
+  - second
+parameters:
+  _class:
+    env:
+      override: second
+  lab:
+    name: dev

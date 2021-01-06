@@ -1,0 +1,4 @@
+parameters:
+  component:
+    config:
+      a: b

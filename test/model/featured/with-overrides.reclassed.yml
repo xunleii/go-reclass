@@ -1,0 +1,13 @@
+classes:
+  - second
+  - third
+  - fourth
+  - first
+parameters:
+  _reclass_:
+    environment: base
+    name:
+      full: reclass
+      short: reclass
+  a: 1
+  y: 1
