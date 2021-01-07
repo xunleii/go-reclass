@@ -13,11 +13,6 @@ parameters:
     colour: red
     notfound: exist
     some: param
-  _reclass_:
-    environment: base
-    name:
-      full: reclass
-      short: reclass
   colour:
     doubleescaped: \red
     escaped: ${_param:colour}

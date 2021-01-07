@@ -4,11 +4,6 @@ parameters:
   _param:
     colour: red
     some: param
-  _reclass_:
-    environment: base
-    name:
-      full: reclass
-      short: reclass
   colours:
     blue:
       name: blue

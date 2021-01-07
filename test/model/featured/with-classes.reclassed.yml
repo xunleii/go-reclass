@@ -10,11 +10,6 @@ parameters:
   '3': value
   _param:
     notfound: exist
-  _reclass_:
-    environment: base
-    name:
-      full: reclass
-      short: reclass
   three:
     a: 1
     b: 2

@@ -3,11 +3,6 @@ classes:
 parameters:
   _param:
     colour: red
-  _reclass_:
-    environment: base
-    name:
-      full: reclass
-      short: reclass
   colour:
     doubleescaped: \red
     escaped: ${_param:colour}
