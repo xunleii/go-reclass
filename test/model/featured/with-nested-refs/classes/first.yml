@@ -1,0 +1,6 @@
+parameters:
+  alpha:
+    one: ${beta:${alpha:two}}
+    two: a
+  beta:
+    a: 99

@@ -1,0 +1,12 @@
+parameters:
+  _param:
+    colour: red
+  colour:
+    escaped: \${_param:colour}
+    doubleescaped: \\${_param:colour}
+    unescaped: ${_param:colour}
+  empty:
+    list: []
+    dict: {}
+  ~list_to_override: ${empty:list}
+  ~dict_to_override: ${empty:dict}
