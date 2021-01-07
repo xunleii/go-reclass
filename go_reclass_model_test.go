@@ -44,7 +44,7 @@ func (s *ModelTestSuite) compareFromYaml(modelName string) {
 
 	reclassFirstNodePath := path.Join("test/model", modelName, "classes/first.yml")
 	goreclassInventory, err := BuildInventory(reclassFirstNodePath)
-	if err := yaml.Unmarshal(reclassYaml, &reclassInventory); err != nil {
+	if err != nil {
 		s.FailNow(fmt.Sprintf("failed to build inventory from %s: %s", path.Join("test/model", modelName), err))
 	}
 
