@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	"gopkg.in/yaml.v3"
+	"github.com/imdario/mergo"
 )
 
 type (
@@ -32,6 +33,17 @@ func BuildInventory(firstNode string) (*Inventory, error) {
 		return nil, fmt.Errorf("failed to unmarshall first node '%s': %w", firstNode, err)
 	}
 
+	for _, class := range inventory.Classes {
+		nodePath := filepath.Join(filepath.Dir(firstNode), class+".yml")
+		// FIXME: class loop here
+		subInventory, err := BuildInventory(nodePath)
+		if err != nil {
+			return nil, err
+		}
+
+		_ = mergo.Merge(subInventory, inventory)
+		inventory = *subInventory
+	}
 	inventory.Classes = append(inventory.Classes, classFromFilename(firstNode))
 
 	return &inventory, nil
